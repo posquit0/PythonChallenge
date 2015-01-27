@@ -5,6 +5,7 @@ import pickle
 
 DATA_URL = "http://www.pythonchallenge.com/pc/def/banner.p"
 
+
 def main():
     u = urllib.urlopen(DATA_URL)
     p = pickle.load(u)

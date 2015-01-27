@@ -7,8 +7,10 @@ PROBLEM_URL = "http://www.pythonchallenge.com/pc/def/ocr.html"
 COMMENT_REGEX = re.compile(r"<!--(.*?)-->", re.DOTALL)
 ALPHABET_REGEX = r"[a-zA-Z]"
 
+
 def recognize(data):
     return "".join(re.findall(ALPHABET_REGEX, data))
+
 
 def main():
     r = requests.get(PROBLEM_URL)

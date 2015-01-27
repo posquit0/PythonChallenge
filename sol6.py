@@ -10,6 +10,7 @@ NEXT_REGEX = r"nothing is (\d+)"
 BASE_FILENAME = "%s.txt"
 START = 90052
 
+
 def main():
     data = requests.get(ZIP_URL).content
     data = StringIO.StringIO(data)

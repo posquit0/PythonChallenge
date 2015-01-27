@@ -8,6 +8,7 @@ DIVIDE_STAGE = r"Divide by"
 NEXT_REGEX = r"nothing is (\d+)"
 START = 12345
 
+
 def main():
     next = START
     payload = dict()
